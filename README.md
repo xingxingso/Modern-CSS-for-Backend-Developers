@@ -61,11 +61,53 @@ nav > a{
 
 - [justify-content - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
 
+- [Flex Item - MDN Web Docs Glossary: Definitions of Web-related terms | MDN](https://developer.mozilla.org/en-US/docs/Glossary/Flex_Item)
 - [flex - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
 
 - [text-transform - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
 
 - [inherit - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/inherit)
+
+### 02. [Flex Your Grids](https://laracasts.com/series/modern-css-for-backend-developers/episodes/2)
+
+> Creating a reliable CSS grid used to require hours of work with meticulous percentage calculations to protect your layout from breaking entirely. Luckily, life is much easier these days. Add a few selectors and you're off to the races, all thanks to flexbox.
+
+#### Note
+
+> public\css\app.css
+
+```css
+.flex,
+.row {
+    display: flex;
+}
+
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+.box {
+    background: #e3e3e3;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*line-height: 100px;
+    text-align: center;*/
+}
+```
+
+#### Reference
+
+- [Flexbox - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+- [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
 
 ## References Collection
 
@@ -75,19 +117,24 @@ nav > a{
 
 - [CSS: em, px, pt, cm, in…](https://www.w3.org/Style/Examples/007/units.en.html)
 
+- [Getting Started With CSS Layout — Smashing Magazine](https://www.smashingmagazine.com/2018/05/guide-css-layout/)
+
 ### CSS
 
 - [linear-gradient() - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
 
 - [justify-content - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
 
-- [flex - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
-
 - [text-transform - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
 
 - [inherit - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/inherit)
 
-## Example
+- [Flex Item - MDN Web Docs Glossary: Definitions of Web-related terms | MDN](https://developer.mozilla.org/en-US/docs/Glossary/Flex_Item)
+- [flex - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+- [Flexbox - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+- [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
+
+## Examples
 
 ### CSS
 
