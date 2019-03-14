@@ -11,6 +11,15 @@
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/episodes/1', function () {
+    return view('e1');
+});
+
+Route::get('/episodes/3', function () {
+    return view('e3');
 });

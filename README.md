@@ -109,6 +109,42 @@ nav > a{
 - [Flexbox - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
 
+### 03. [Workshop - Card Design](https://laracasts.com/series/modern-css-for-backend-developers/episodes/3)
+
+> Workshop time. We've been given a card design that needs to be converted to HTML and CSS. Piece by piece, let's construct it from scratch. As you'll find, yet again, flexbox comes to the rescue over and over.
+
+#### Note
+
+```css
+html,
+body {
+    height: 100%;
+    font-family: "Open Sans", sans-serif; 
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+```
+
+```css
+.card {
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+    width: 475px;
+    height: 258px;
+    display: flex;
+    border-radius: 10px;
+}
+```
+
+```css
+.card-meta > div:first-child {
+    margin-right: 1em;
+}
+```
+
 ## References Collection
 
 - [Google Fonts](https://fonts.google.com/)
@@ -129,9 +165,14 @@ nav > a{
 
 - [inherit - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/inherit)
 
+#### flex
+
 - [Flex Item - MDN Web Docs Glossary: Definitions of Web-related terms | MDN](https://developer.mozilla.org/en-US/docs/Glossary/Flex_Item)
+
 - [flex - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+
 - [Flexbox - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
 
 ## Examples
@@ -143,8 +184,14 @@ nav > a{
     font-family: 'Open Sans', sans-serif;
 
     background-image: linear-gradient(to right, #a25b5b, #692e4c);
+    background: linear-gradient(to bottom, #21c8f6, #637bff);
+
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 
     display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 
     text-transform: uppercase;
@@ -161,5 +208,22 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+```
+
+```css
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-meta > div:first-child {
+    margin-right: 1em;
 }
 ```
