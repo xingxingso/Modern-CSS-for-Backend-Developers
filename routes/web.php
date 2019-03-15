@@ -16,10 +16,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/episodes/1', function () {
-    return view('e1');
-});
-
-Route::get('/episodes/3', function () {
-    return view('e3');
+Route::get('/episodes/{id}', function ($id) {
+    return view('e'.$id);
 });

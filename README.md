@@ -145,6 +145,74 @@ body {
 }
 ```
 
+### 04. [Refactoring to Utility Classes and Tailwind](https://laracasts.com/series/modern-css-for-backend-developers/episodes/4)
+
+> In the previous lesson, we constructed a card component in a fairly traditional fashion. Let's try a different approach in this episode. Using the completed design, we'll drastically reduce the size of our CSS file by refactoring to utility classes and [Tailwind](http://tailwindcss.com/).
+
+### Note
+
+> tailwindcss
+
+|      Class       |            Properties           |
+|------------------|---------------------------------|
+| flex             | display: flex;                  |
+| flex-col         | flex-direction: column;         |
+| flex-1           | flex: 1;                        |
+| item-center      | align-items: center;            |
+| justify-center   | justify-content: center;        |
+| justify-between  | justify-content: space-between; |
+| font-light       | font-weight: 300;               |
+| no-underline     | text-decoration: none;          |
+| rounded          | border-radius: .25rem;          |
+| rounded-full     | border-radius: 9999px;          |
+| text-center      | text-align: center;             |
+| text-white       | color: #ffffff;                 |
+| text-grey-darker | color: #606f7b;                 |
+| text-xs          | font-size: .75rem;              |
+| text-2xl         | font-size: 1.5rem;              |
+
+
+> padding margin 
+
+>> CLASS
+
+    p       Padding
+    m       Margin
+    -m      Negative Margin
+
+> SIDE (optional)
+
+            All (default)
+    t       Top
+    r       Right
+    b       Bottom
+    l       Left
+    x       Horizontal
+    y       Vertical
+
+>> SPACE
+
+    0       0
+    1       0.25rem
+    2       0.5rem
+    3       0.75rem
+    4       1rem
+    5       1.25rem
+    6       1.5rem
+    8       2rem
+    10      2.5rem
+    12      3rem
+    16      4rem
+    20      5rem
+    24      6rem
+    32      8rem
+    px      1px
+    auto    auto (margins only)
+
+### Reference
+
+- [Tailwind CSS - A Utility-First CSS Framework for Rapid UI Development](https://tailwindcss.com/docs/what-is-tailwind/)
+
 ## References Collection
 
 - [Google Fonts](https://fonts.google.com/)
@@ -155,6 +223,8 @@ body {
 
 - [Getting Started With CSS Layout — Smashing Magazine](https://www.smashingmagazine.com/2018/05/guide-css-layout/)
 
+- [Tailwind CSS - A Utility-First CSS Framework for Rapid UI Development](https://tailwindcss.com/docs/what-is-tailwind/)
+
 ### CSS
 
 - [linear-gradient() - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
@@ -164,6 +234,8 @@ body {
 - [text-transform - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
 
 - [inherit - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/inherit)
+
+- [BEM 101 | CSS-Tricks](https://css-tricks.com/bem-101/)
 
 #### flex
 

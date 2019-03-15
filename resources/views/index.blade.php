@@ -45,7 +45,9 @@
                     </div>
 
                     <div class="col">
-                        <div class="box">Some Callout Text</div>
+                        <div class="box">
+                            <a href="/episodes/4">episode 4</a>
+                        </div>
                     </div>
 
                     <div class="col">
