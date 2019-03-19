@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/header.css">
         <link rel="stylesheet" href="/css/app.css">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body>
         <header class="section">
@@ -51,7 +52,17 @@
                     </div>
 
                     <div class="col">
-                        <div class="box">Some Callout Text</div>
+                        <div class="box flex flex-row justify-around">
+                            <div class="flex flex-col">
+                                <a href="/episodes/5-1">episode 5-1</a>
+                                <a href="/episodes/5-2">episode 5-2</a>
+                            </div>
+
+                            <div class="flex flex-col">
+                                <a href="/episodes/r5-1">resource 5-1</a>
+                                <a href="/episodes/r5-2">resource 5-2</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

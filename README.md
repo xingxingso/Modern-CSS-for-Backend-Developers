@@ -149,9 +149,57 @@ body {
 
 > In the previous lesson, we constructed a card component in a fairly traditional fashion. Let's try a different approach in this episode. Using the completed design, we'll drastically reduce the size of our CSS file by refactoring to utility classes and [Tailwind](http://tailwindcss.com/).
 
-### Note
+#### Reference
 
-> tailwindcss
+- [Tailwind CSS - A Utility-First CSS Framework for Rapid UI Development](https://tailwindcss.com/docs/what-is-tailwind/)
+
+### 05. [Easy Flexbox Wins](https://laracasts.com/series/modern-css-for-backend-developers/episodes/5)
+
+> Before moving on, let's review five examples of every-day CSS requirements that can instantly be solved with flexbox.
+
+#### Reference
+
+- [350x150 (350×150)](http://via.placeholder.com/350x150)
+
+## References Collection
+
+- [Google Fonts](https://fonts.google.com/)
+
+- [Normalize.css: Make browsers render all elements more consistently.](http://necolas.github.io/normalize.css/)
+
+- [CSS: em, px, pt, cm, in…](https://www.w3.org/Style/Examples/007/units.en.html)
+
+- [Getting Started With CSS Layout — Smashing Magazine](https://www.smashingmagazine.com/2018/05/guide-css-layout/)
+
+- [Tailwind CSS - A Utility-First CSS Framework for Rapid UI Development](https://tailwindcss.com/docs/what-is-tailwind/)
+
+- [Placeholder.com: Placeholder Images Done For You [JPG, GIF & PNG]](https://placeholder.com/)
+
+### CSS
+
+- [linear-gradient() - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
+
+- [justify-content - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
+
+- [text-transform - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
+
+- [inherit - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/inherit)
+
+- [BEM 101 | CSS-Tricks](https://css-tricks.com/bem-101/)
+
+#### flex
+
+- [Flex Item - MDN Web Docs Glossary: Definitions of Web-related terms | MDN](https://developer.mozilla.org/en-US/docs/Glossary/Flex_Item)
+
+- [flex - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+
+- [Flexbox - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+
+- [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
+
+## Examples
+
+### tailwindcss
 
 |      Class       |            Properties           |
 |------------------|---------------------------------|
@@ -170,6 +218,13 @@ body {
 | text-grey-darker | color: #606f7b;                 |
 | text-xs          | font-size: .75rem;              |
 | text-2xl         | font-size: 1.5rem;              |
+| w-3/4            | width: 75%;                     |
+| h-64             | height: 16rem;                  |
+| h-full           | height: 100%;                   |
+| h-screen         | height: 100vh;                  |
+| min-h-screen     | min-height: 100vh;              |
+| bg-red           | background-color: #e3342f;      |
+|                  |                                 |
 
 
 > padding margin 
@@ -209,46 +264,6 @@ body {
     px      1px
     auto    auto (margins only)
 
-### Reference
-
-- [Tailwind CSS - A Utility-First CSS Framework for Rapid UI Development](https://tailwindcss.com/docs/what-is-tailwind/)
-
-## References Collection
-
-- [Google Fonts](https://fonts.google.com/)
-
-- [Normalize.css: Make browsers render all elements more consistently.](http://necolas.github.io/normalize.css/)
-
-- [CSS: em, px, pt, cm, in…](https://www.w3.org/Style/Examples/007/units.en.html)
-
-- [Getting Started With CSS Layout — Smashing Magazine](https://www.smashingmagazine.com/2018/05/guide-css-layout/)
-
-- [Tailwind CSS - A Utility-First CSS Framework for Rapid UI Development](https://tailwindcss.com/docs/what-is-tailwind/)
-
-### CSS
-
-- [linear-gradient() - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
-
-- [justify-content - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
-
-- [text-transform - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
-
-- [inherit - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/inherit)
-
-- [BEM 101 | CSS-Tricks](https://css-tricks.com/bem-101/)
-
-#### flex
-
-- [Flex Item - MDN Web Docs Glossary: Definitions of Web-related terms | MDN](https://developer.mozilla.org/en-US/docs/Glossary/Flex_Item)
-
-- [flex - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
-
-- [Flexbox - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
-
-- [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
-
-## Examples
-
 ### CSS
 
 ```css
@@ -270,6 +285,9 @@ body {
     color: rgba(255,255,255,0.5);
 
     color: inherit;
+    
+    height: 100vh;
+    min-height: 100vh;
 }
 ```
 
